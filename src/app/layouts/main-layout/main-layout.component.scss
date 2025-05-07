@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.layout {
+  height: 100vh;
+  width: 100%;
+  &_header {
+    position: relative;
+    height: 64px;
+    padding: 0;
+    background: #fff;
+    box-shadow: -2px -1px 6px rgba(0, 21, 41, 0.08);
+    display: flex;
+    align-items: center;
+  }
+  &_container {
+    display: flex;
+    &-menu {
+      width: 240px;
+    }
+    &-body {
+      padding: 20px;
+    }
+  }
+}
